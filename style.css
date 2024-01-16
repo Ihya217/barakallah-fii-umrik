@@ -36,6 +36,10 @@ body {
   .birthdayCard:hover .wrap-decoTwo {
     display: none;
   }
+
+  .birthdayCard:hover .open {
+    color: transparent;
+  }
   
   .birthdayCard:hover .plate {
     display: none;
@@ -140,16 +144,7 @@ body {
     left:315px;
     transform: rotate(-30deg);
   }
-  
-  /* .plate {
-    position: absolute;
-    width: 130px;
-    height: 5px;
-    background-color: #00bbf9;
-    left:60px;
-    top:213px;
-  }
-   */
+
   .cake {
     position: absolute;
     overflow: hidden;
@@ -258,4 +253,13 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.open {
+  transition: color 0.3s ease; /* Efek transisi untuk perubahan warna saat dihover */
+  font-size: small;
+}
+
+.open:hover {
+  color: transparent; /* Menyembunyikan tulisan dengan membuat warna menjadi transparan saat dihover */
 }
